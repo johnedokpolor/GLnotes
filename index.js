@@ -9,6 +9,8 @@ let user;
 let userPin;
 let currentPin;
 
+localStorage.clear()
+
 
 function showInformation(){
     notesContainer.innerHTML = localStorage.getItem("notes") 
@@ -104,7 +106,6 @@ createBtn.addEventListener("click", () => {
     let date = document.createElement('p');
 
     inputBox.className = "input-box";
-    // inputBox.classList.add("animate__animated animate__flipInX")
     heading.className = "heading"
     heading.textContent = "Title"
     heading.className = "text"
