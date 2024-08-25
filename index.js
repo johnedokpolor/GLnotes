@@ -33,7 +33,7 @@ function verifyPin() {
                     title:`Welcome Back ${user}🎉`,
                     text: "Continue your notes✍🏼",
                     icon: "success",
-                    timer: 500,
+                    timer: 1000,
                     timerProgressBar: true
                     }).then(result => {
                 document.querySelector(".lockScreen").classList.add("unlocked")
@@ -60,7 +60,6 @@ function saveUserDetails() {
 
 function updateStorage() {
     localStorage.setItem("notes", notesContainer.innerHTML)
-
 }
 
 if (localStorage.getItem("user") === null) {
