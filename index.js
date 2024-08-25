@@ -9,7 +9,7 @@ let user;
 let userPin;
 let currentPin;
 
-localStorage.clear()
+// localStorage.clear()
 
 
 function showInformation(){
