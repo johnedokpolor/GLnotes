@@ -33,7 +33,7 @@ function verifyPin() {
                     title:`Welcome Back ${user}🎉`,
                     text: "Continue your notes✍🏼",
                     icon: "success",
-                    timer: 2000,
+                    timer: 500,
                     timerProgressBar: true
                     }).then(result => {
                 document.querySelector(".lockScreen").classList.add("unlocked")
