@@ -23,7 +23,7 @@
   }
   body {
     overflow-y: hidden;
-    overflow-x: hidden;
+    background: linear-gradient(135deg, green, rgb(1, 30, 1));
   }
   .active {
     overflow-y: scroll;
@@ -46,12 +46,11 @@
   .container {
     position: relative;
     min-height: 100vh;
-    background:var(--gradient);
     padding: 4% 0 0 4%;
   }
   
   .container > button {
-    background: linear-gradient(135deg, green, rgb(1, 30, 1));
+    background: var(--gradient);
     color: #fff;
     font-size: 16px;
     outline: 0;
@@ -66,6 +65,7 @@
     display: grid;
     grid-template: 1fr 1fr / 400px 400px 400px;
     margin-bottom: 40px;
+    width: 100%;
   }
   .input-box {
     position: relative;
@@ -131,6 +131,5 @@
     .notes-container {
         display: grid;
         grid-template: 1fr 1fr / 400px ;
-        margin-left: 40px;
       }
   }
